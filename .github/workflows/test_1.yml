@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: hola mundo
-        run: echo "Hola mundo"
+        run: echo "Hola mundo desde la rama"
 
   other:
       needs: hola
@@ -22,4 +22,4 @@ jobs:
 
       steps:
         - name: hola mundo
-          run: echo "Hola desde otro job"
+          run: echo "Hola desde otro job desde la rama"
