@@ -1,12 +1,6 @@
 name: Hola mundo
 
-on: 
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [pus]
 
 jobs:
   hola:
@@ -21,5 +15,7 @@ jobs:
       runs-on: ubuntu-latest
 
       steps:
-        - name: hola mundo
-          run: echo "Hola desde otro job desde la rama"
+        - name: Checkout
+          uses: actions/checkout@v4.2.2
+        - name: LS
+          run: ls -al
