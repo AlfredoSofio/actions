@@ -10,10 +10,10 @@ jobs:
       - name: hola mundo
         run: echo "Hola mundo"
 
-jobs:
-  hola:
-    runs-on: ubuntu-latest
+  other:
+    hola:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: hola mundo
-        run: echo "Hola desde otro job"
+      steps:
+        - name: hola mundo
+          run: echo "Hola desde otro job"
