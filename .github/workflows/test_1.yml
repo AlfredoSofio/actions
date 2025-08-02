@@ -7,15 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: hola mundo
-        run: echo "Hola mundo desde la rama"
-
-  other:
-      needs: hola
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Checkout
-          uses: actions/checkout@v4.2.2
-        - name: LS
-          run: ls -al
+      - name: ls
+        run: |
+          echo "hola mundo" >> hola.txt
+          cat hola.txt
