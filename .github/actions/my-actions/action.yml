@@ -12,4 +12,5 @@ runs:
 
     - name: php version
       run: php --version
+      shell: bash
       
