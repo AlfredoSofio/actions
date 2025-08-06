@@ -18,6 +18,7 @@ runs:
     
     - name: prueba inputs
       run: echo "Input ${{ inputs.message}} "
+      shell: bash
 
     - name: php version
       run: php --version
