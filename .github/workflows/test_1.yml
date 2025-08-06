@@ -13,6 +13,8 @@ jobs:
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.4.0
+        with:
+          message: "testing inputs"
       
       - name:  node version
         run: node --version
