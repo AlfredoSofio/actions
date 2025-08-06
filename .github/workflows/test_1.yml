@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: ./.github/actions/mi-actions/action.yml  
+      - uses: ./.github/actions/my-actions/action.yml  
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.4.0
